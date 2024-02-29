@@ -26,7 +26,7 @@
                 <h2>{{$poll->title}}</h2>
                 <p>{{$poll->description}}</p>
                 <p>Creator: {{$poll->user->name}}</p>
-                <p>Question: {{$poll->user->question}}</p>
+                <p>Question: {{$poll->question}}</p>
                 <div class="options">
                     @foreach($poll->options as $option)
                         <div class="checkbox">
@@ -38,10 +38,12 @@
                 </div>
                 <button class="btn-primary">Submit</button>
             </form>
+            @if(auth()->id() == $poll->user_id)
+            <a href="{{ route('poll.edit', $poll->id) }}" style="font-weight:bold; margin-left:5px;">Edit</a>
+            @endif
         </div>
-        @if(auth()->id() == $poll->user_id)
-                            <a href="{{ route('poll.edit', $poll->id) }}" style="font-weight:bold; margin-left:5px;">Edit</a>
-        @endif
+       
+        
         @endforeach
     </div>
     @endif
