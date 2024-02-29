@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container for centering the content */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Styling for the poll and options */
+.poll-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.poll {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.poll h2, .poll p {
+    margin: 0 0 10px;
+    color: blue;
+}
+
+.poll p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Styling for the create poll and edit buttons */
+.create-poll-link, .btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    margin-top: 10px;
+    padding-block: 5px;
+    background-color: #102415;
+}
+
+/* Styling for checkboxes */
+.checkbox label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox input[type="checkbox"] {
+    accent-color: #007bff;
+}
+
+.poll-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.poll-form h1 {
+    margin-top: 0;
+}
+
+.poll-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.poll-form input[type="text"],
+.poll-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.poll-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.poll-form button:hover {
+    background-color: #0056b3;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+nav {
+    background-color: #132058;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a,
+nav button {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.highlighted {
+    text-decoration: dotted;
+    font-weight: bold;
+}
+
+nav button {
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #c82333;
+}
